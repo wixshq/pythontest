@@ -14,7 +14,7 @@ from login import login_check
 datas = [
     {"username":"whq","password":"123456","check":{"errcode":0,"errmsg":"登录成功"}},
     {"username":"whq1","password":"123456","check":{"errcode":1,"errmsg":"账号或密码错误"}},
-    {"username":"123","password":"123456","check":{"errcode": 1, "errmsg": "账号或密码不能为空"}},
+    {"username":None,"password":"123456","check":{"errcode": 1, "errmsg": "账号或密码不能为空"}},
 ]
 
 @ddt.ddt

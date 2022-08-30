@@ -7159,13 +7159,13 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 2,
+    "testPass": 3,
     "testResult": [
         {
             "className": "TestLogin",
             "methodName": "test_login_true_1",
             "description": null,
-            "spendTime": "0.00101 s",
+            "spendTime": "0.0 s",
             "status": "成功",
             "log": [
                 ""
@@ -7185,27 +7185,17 @@ body.skin-3 {
             "className": "TestLogin",
             "methodName": "test_login_true_3",
             "description": null,
-            "spendTime": "0.00198 s",
-            "status": "失败",
+            "spendTime": "0.000997 s",
+            "status": "成功",
             "log": [
-                "",
-                "Traceback (most recent call last):\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 591, in run\n    self._callTestMethod(testMethod)\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 549, in _callTestMethod\n    method()\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\ddt.py\", line 220, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\pythontest\\whq\\test_login.py\", line 33, in test_login_true\n    self.assertEqual(res,case[\"check\"])\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 845, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 1144, in assertDictEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n",
-                "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 675, in fail\n    raise self.failureException(msg)\n",
-                "AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}\n- {'errcode': 1, 'errmsg': '账号或密码错误'}\n?                                ^^\n\n+ {'errcode': 1, 'errmsg': '账号或密码不能为空'}\n?                                ^^^^\n\n"
+                ""
             ]
         }
     ],
     "testName": "测试报告",
     "testAll": 3,
-    "testFail": 1,
-    "beginTime": "2022-08-30 16:03:31",
+    "testFail": 0,
+    "beginTime": "2022-08-30 18:40:22",
     "totalTime": "0s",
     "testSkip": 0,
     "testError": 0
