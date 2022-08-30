@@ -7,15 +7,19 @@ Time: 2022-08-25 20:52
 """
 import os.path
 import unittest
-
 import ddt
-from login import login_check
 
-datas = [
-    {"username":"whq","password":"123456","check":{"errcode":0,"errmsg":"登录成功"}},
-    {"username":"whq1","password":"123456","check":{"errcode":1,"errmsg":"账号或密码错误"}},
-    {"username":None,"password":"123456","check":{"errcode": 1, "errmsg": "账号或密码不能为空"}},
-]
+
+from login import login_check
+from handle_excel import HandleExcel
+
+
+# 获取目录下的测试数据路径
+file_fir = os.path.join(os.path.dirname(os.path.abspath(__file__)),"login_cases.xlsx")
+print(file_fir)
+ex = HandleExcel(file_fir,'login')
+datas = ex.read_all_datas()
+ex.excel_close()
 
 @ddt.ddt
 class TestLogin(unittest.TestCase):
@@ -26,11 +30,10 @@ class TestLogin(unittest.TestCase):
     # def tearDown(self):
     #     print("结束")
 
-
     @ddt.data(*datas)
     def test_login_true(self,case):
         res = login_check(case["username"],case["password"])
-        self.assertEqual(res,case["check"])
+        self.assertEqual(res,eval(case["check"]))
 
 
 

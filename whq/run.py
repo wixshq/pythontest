@@ -5,18 +5,15 @@ Time: 2022-08-29 16:42
 
 
 """
-
 import unittest
-from HTMLTestRunner import HTMLTestRunner
+import os
 from BeautifulReport import BeautifulReport
 
-s = unittest.TestLoader().discover(r"C:\Users\Administrator\Desktop\pythontest\whq")
+# 获取测试用例路径
+cases_dir = os.path.dirname(os.path.abspath(__file__))
 
-# runner = unittest.TextTestRunner()
-# runner.run(s)
-
-# with open("report.html","wb") as fs:
-#     HTMLTestRunner(fs).run(s)
+s = unittest.TestLoader().discover(cases_dir)
 
 br = BeautifulReport(s)
-br.report("测试报告")
+br.report("测试报告123")
+
