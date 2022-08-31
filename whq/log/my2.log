@@ -1,0 +1,591 @@
+2022-08-31 14:19:10,210 whq日志 INFO test_login.py-36 line :************测试用例开始执行************
+2022-08-31 14:19:10,213 whq日志 INFO test_login.py-40 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:19:10,213 whq日志 INFO test_login.py-42 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:19:10,214 whq日志 ERROR test_login.py-46 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 44, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:19:10,217 whq日志 INFO test_login.py-40 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:19:10,217 whq日志 INFO test_login.py-42 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:19:10,217 whq日志 INFO test_login.py-49 line :断言成功，用例通过！
+2022-08-31 14:19:10,217 whq日志 INFO test_login.py-50 line :************测试用例执行结束************
+2022-08-31 14:19:10,218 whq日志 INFO test_login.py-40 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:19:10,218 whq日志 INFO test_login.py-42 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:19:10,218 whq日志 ERROR test_login.py-46 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 44, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:22:18,408 whq日志 INFO test_login.py-37 line :************测试用例开始执行************
+2022-08-31 14:22:18,411 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:22:18,411 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:18,412 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:22:18,418 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:22:18,418 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:18,418 whq日志 INFO test_login.py-50 line :断言成功，用例通过！
+2022-08-31 14:22:18,418 whq日志 INFO test_login.py-51 line :************测试用例执行结束************
+2022-08-31 14:22:18,419 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:22:18,419 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:18,419 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:22:56,888 whq日志 INFO test_login.py-37 line :************测试用例开始执行************
+2022-08-31 14:22:56,891 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:22:56,891 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:56,893 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:22:56,898 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:22:56,898 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:56,898 whq日志 INFO test_login.py-50 line :断言成功，用例通过！
+2022-08-31 14:22:56,898 whq日志 INFO test_login.py-51 line :************测试用例执行结束************
+2022-08-31 14:22:56,899 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:22:56,899 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:22:56,900 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:23:07,033 whq日志 INFO test_login.py-37 line :************测试用例开始执行************
+2022-08-31 14:23:07,035 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:23:07,035 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:23:07,036 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-50 line :断言成功，用例通过！
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-51 line :************测试用例执行结束************
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:23:07,038 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:23:07,039 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:24:02,983 whq日志 INFO test_login.py-37 line :************测试用例开始执行************
+2022-08-31 14:24:02,985 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:24:02,985 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:24:02,986 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-50 line :断言成功，用例通过！
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-51 line :************测试用例执行结束************
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-41 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:24:02,991 whq日志 INFO test_login.py-43 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:24:02,992 whq日志 ERROR test_login.py-47 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 45, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:28:54,379 whq日志 INFO test_login.py-38 line :************测试用例开始执行************
+2022-08-31 14:28:54,382 whq日志 INFO test_login.py-42 line :测试数据为：{'username': 'whq', 'password': 123456, 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:28:54,382 whq日志 INFO test_login.py-44 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:28:54,383 whq日志 ERROR test_login.py-48 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 46, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:28:54,388 whq日志 INFO test_login.py-42 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:28:54,388 whq日志 INFO test_login.py-44 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:28:54,388 whq日志 INFO test_login.py-51 line :断言成功，用例通过！
+2022-08-31 14:28:54,388 whq日志 INFO test_login.py-52 line :************测试用例执行结束************
+2022-08-31 14:28:54,388 whq日志 INFO test_login.py-42 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:28:54,389 whq日志 INFO test_login.py-44 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:28:54,389 whq日志 ERROR test_login.py-48 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 46, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:29:37,533 whq日志 INFO test_login.py-41 line :************测试用例开始执行************
+2022-08-31 14:29:37,537 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq', 'password': '123456', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:29:37,537 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:29:37,537 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:29:37,538 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:29:37,539 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq1', 'password': '123456', 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:29:37,539 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:29:37,539 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:29:37,539 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:29:37,539 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'None', 'password': '123456', 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:29:37,540 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:29:37,542 whq日志 ERROR test_login.py-51 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 49, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:29:51,498 whq日志 INFO test_login.py-41 line :************测试用例开始执行************
+2022-08-31 14:29:51,501 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq', 'password': '123456', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:29:51,501 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:29:51,501 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:29:51,501 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:29:51,501 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq1', 'password': '123456', 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:29:51,502 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:29:51,502 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:29:51,502 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:29:51,503 whq日志 INFO test_login.py-45 line :测试数据为：{'username': None, 'password': '123456', 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:29:51,503 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码不能为空'}
+2022-08-31 14:29:51,503 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:29:51,503 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:30:15,170 whq日志 INFO test_login.py-41 line :************测试用例开始执行************
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq', 'password': '123456', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-45 line :测试数据为：{'username': 'whq1', 'password': '123456', 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:30:15,173 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:30:15,174 whq日志 INFO test_login.py-45 line :测试数据为：{'username': None, 'password': '123456', 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:30:15,174 whq日志 INFO test_login.py-47 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码不能为空'}
+2022-08-31 14:30:15,174 whq日志 INFO test_login.py-54 line :断言成功，用例通过！
+2022-08-31 14:30:15,174 whq日志 INFO test_login.py-55 line :************测试用例执行结束************
+2022-08-31 14:37:28,621 whq日志 INFO test_login.py-42 line :************测试用例开始执行************
+2022-08-31 14:37:28,624 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:37:28,624 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:37:28,626 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 0, 'errmsg': '登录成功'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?             ^             ^^^^^^^
+
++ {'errcode': 0, 'errmsg': '登录成功'}
+?             ^             ^^^^
+
+2022-08-31 14:37:28,631 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:37:28,631 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:37:28,631 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:37:28,631 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:37:28,632 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:37:28,632 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:37:28,632 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:37:51,428 whq日志 INFO test_login.py-42 line :************测试用例开始执行************
+2022-08-31 14:37:51,432 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:37:51,433 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:37:51,434 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:37:51,434 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:37:51,436 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "F:\anzhaung2\PyCharm 2022.2\plugins\python\helpers\pycharm\teamcity\diff_tools.py", line 33, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:39:27,625 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:39:27,625 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:39:27,625 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:39:27,626 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:39:27,627 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:39:27,627 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:39:27,627 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:39:27,627 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:39:27,627 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:48:50,825 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:48:50,826 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:48:50,826 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\cases\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:49:20,506 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:20,507 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:49:20,508 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:49:20,508 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\cases\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:49:47,195 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:49:47,196 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:49:47,197 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:49:47,197 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:49:47,197 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\cases\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:50:42,582 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:50:42,582 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:50:42,582 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:50:42,582 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:50:42,582 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:50:42,583 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:50:42,584 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\cases\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+
+2022-08-31 14:51:09,791 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:51:09,791 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq', 'password': '123456a', 'check': '{"errcode":0,"errmsg":"登录成功"}'}
+2022-08-31 14:51:09,791 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 0, 'errmsg': '登录成功'}
+2022-08-31 14:51:09,791 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'whq1', 'password': 123456, 'check': '{"errcode":1,"errmsg":"账号或密码错误"}'}
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-55 line :断言成功，用例通过！
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-56 line :************测试用例执行结束************
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-45 line :************测试用例开始执行************
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-46 line :测试数据为：{'username': 'None', 'password': 123456, 'check': '{"errcode": 1, "errmsg": "账号或密码不能为空"}'}
+2022-08-31 14:51:09,792 whq日志 INFO test_login.py-48 line :实际运行结果为：{'errcode': 1, 'errmsg': '账号或密码错误'}
+2022-08-31 14:51:09,793 whq日志 ERROR test_login.py-52 line :断言失败，用例失败！
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\pythontest\whq\cases\test_login.py", line 50, in test_login_true
+    self.assertEqual(res,eval(case["check"]))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1144, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: {'errcode': 1, 'errmsg': '账号或密码错误'} != {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+- {'errcode': 1, 'errmsg': '账号或密码错误'}
+?                                ^^
+
++ {'errcode': 1, 'errmsg': '账号或密码不能为空'}
+?                                ^^^^
+

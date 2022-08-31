@@ -5,6 +5,7 @@ Time: 2022-08-30 18:35
 
 
 """
+import os
 from openpyxl import load_workbook
 
 
@@ -30,11 +31,12 @@ class HandleExcel:
         # 从Excel第二行开始循环，将单元格的值组成list，然后通过zip函数和表头行组成dict，最后追加到最终的数据list
         data_list = []
         titles = self.__read_titles()
+        print(titles)
         for item in list(self.sh.rows)[1:]:
             item_list = []
             for i in item:
                 item_list.append(i.value)
-            res = dict(zip(titles, item_list))
+            res = dict(zip(titles,item_list))
             # eval函数去掉''
             # res["check"] = eval(res["check"])
             data_list.append(res)
@@ -43,7 +45,13 @@ class HandleExcel:
     def excel_close(self):
         self.wb.close()
 
-
+if __name__ == '__main__':
+    file_fir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../login_cases.xlsx")
+    print(file_fir)
+    ex = HandleExcel(file_fir, 'login')
+    datas = ex.read_all_datas()
+    ex.excel_close()
+    print(datas)
 
 # 获取单元格的值
 # cel = sh.cell(2,3)

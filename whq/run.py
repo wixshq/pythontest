@@ -10,7 +10,8 @@ import os
 from BeautifulReport import BeautifulReport
 
 # 获取测试用例路径
-cases_dir = os.path.dirname(os.path.abspath(__file__))
+cases_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),"cases")
+# print(cases_dir)
 
 s = unittest.TestLoader().discover(cases_dir)
 
