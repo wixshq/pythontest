@@ -7,6 +7,9 @@ Time: 2022-08-31 12:31
 """
 
 import logging
+import os
+
+from whq.config.conf import conf
 
 class MyLogger(logging.Logger):
 
@@ -35,7 +38,8 @@ class MyLogger(logging.Logger):
 
 
 
-mylogger = MyLogger("whq日志", file=r"../whq/log/my2.log")
+mylogger = MyLogger("whq日志", file=r"../whq/log/my.log")
+mylogger = MyLogger("whq日志", file=r"../whq/log/my.log")
 
 
 if __name__ == '__main__':
